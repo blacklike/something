@@ -5,7 +5,7 @@
 [测试练习](text.html)  [练习预览](http://zptcweb.github.io/text.html)
 
 ## 图片测试
-[图片练习](img.html)  [图片预览](http://zptcweb.github.io/img.html)
+[图片练习](img.html)  [图片预览](http://blacklike.github.io/img.html)
 
 ## 列表
 [列表练习](img.html)  [列表预览](http://zptcweb.github.io/list.html)
@@ -80,95 +80,7 @@
 3.  史上最性感的编辑器-[**sublimetext**](http://www.sublimetext.com/)，[安装步骤](soft/01install sublime_text.md)，**sublime text常用插件集成版** [百度网盘下载](http://pan.baidu.com/s/1nubND8l)、[课程资源下载](https://github.com/zptcsoft/zptcsoft.github.io/raw/dev/soft/01Sublime%20Text%202.0.2%20x64.rar), [学习资源](http://www.jianshu.com/p/d1b9a64e2e37)。
 4.  **GithubDesktop安装**，首先安装[**.net Framework 4.5**](http://www.microsoft.com/zh-cn/download/details.aspx?id=30653), 其次解压缩安装**Github Desktop**[百度网盘下载](http://pan.baidu.com/s/1i4bVR4T)、[课程资源下载](https://github.com/zptcsoft/zptcsoft.github.io/raw/dev/soft/02Github%20Desktop.rar)。
 
-## 学友链接
 
-### 软件151
-
-[01徐浩鹏](https://github.com/xhp111/xhp111.github.io)
-[02李明豪]( https://github.com/fylmh/fylmh.github.io) 
-[04尹飞燕](https://github.com/Ysidm/zptcsoft.github.io/)
-[05全凯俊](https://github.com/yyQKJ/yyQKJ.github.io)
-[06马驰傲](https://github.com/xiaoaoao/xiaoaoao.github.io)
-[07张铸涛](https://github.com/jhzzt/jhzzt.github.io)
-[08许丹妮](https://github.com/xudanni/xudanni.github.io)
-[09陈浩](https://github.com/BlackTeaChan/BlackTeaChan.github.io)
-[10杨登欢](https://github.com/916hh/916hh.github.io)
- 
- 
-[12任军](https://github.com/Ghostrj/Ghostrj.github.io)
-[13章宇凯](https://github.com/kaiyfy/kaiyfy.github.io)
-[14潘佳琦](https://github.com/pjq123456/pjq123456.github.io)
-15裘家威
-[16李玲巧](https://github.com/lilingqiao/lilingqiao.github.io)
-[17郑天阳](https://github.com/zty451514243/zty451514243.github.io)
-[18范莎莎](https://github.com/18158652021/18158652021.github.io)
-[19王永琪](https://github.com/29816768/29816768.github.io)
-[21白逢喜](https://github.com/b526879840/b526879840.github.io)
-
- 
-[22夏远征](https://github.com/SBNMC/SBNMC.github.io)
-[23李传访](https://github.com/idcnm/idcnm.github.io)
-[24曾丽丽](https://github.com/zilanhua/zilanhua.github.io)
-[25陈王超](https://github.com/aimbeats/aimbeats.github.io)
-[26林群栋](https://github.com/LinQD/LinQD.github.io)
-[27王瑶]( https://github.com/blacklike/blacklike.github.io/)
-[28王浩](https://github.com/a1172690960/a1172690960.github.io)
-29叶圣辉
-[30阮盛威](https://github.com/rsw0416/rsw0416.github.io)
-
-[31徐道聪](https://github.com/xuxiaoshang/xuxiaoshang.github.io)
-[32高启中](https://github.com/ttt84057/ttt84057.github.io)
-[34姚文辉](https://github.com/ywh10114/ywh10114.github.io)
-[35倪浩](https://github.com/NHLALALA/NHLALALA.github.io)
-[36鲁好德](https://github.com/lhdzptc/lhdzptc.github.io)
-[37张天一](https://github.com/SBCNM/SBCNM.github.io) 
-[38李彦东](https://github.com/00544/00544.github.io)
-[39刘晓辉]( https://github.com/liuxiaohui2060/liuxiaohui.github.io)
-[41徐鹏](https://github.com/xp1065013466/xp1065013466.github.io)
-
- 
-
-### 软件152
-[01余家宝](https://github.com/prtake/prtake.github.io) 
-[02郑柯柯](https://github.com/771490657/771490657.github.io)
-[03单超艺](https://github.com/Mometime/Mometime.github.io)
-[04沈智婷](https://github.com/sehun1/sehun1.github.io)
-[05赵芳燕](https://github.com/dwhshabi/dwhshabi.github.io)
-[06周陈](https://github.com/zczptc/zczptc.github.io)
-[07戴王辉](https://github.com/zfyshabiya/zfyshabiya.github.io)
-[08方搏](https://github.com/acher886654/acher886654.github.io)
-[09陈猛](https://github.com/chen321/chen321.github.io)
-
-
-[10周冰婕](https://github.com/zptczbj/zptczbj.github.io)
-[11陈章文](https://github.com/saber12458/saber12458.github.io) 
-[12胡森方](https://github.com/794710545/zptcsoft.github.io)
-[13廖定旺](https://github.com/1264673023/1264673023.github.io)
-14沈锋
-[16唐宁](https://github.com/s404/s404.github.io)
-[18张家林](https://github.com/1097919195/1097919195.github.io)
-[20卫银宇](https://github.com/znbys/znbys.github.io) 
-[21王翔宇](https://github.com/a12306/a12306.github.io)
-
-[22瞿骁皓](https://github.com/wowowowowo/wowowowowo.github.io)
-[23江俊杰](https://github.com/hyyqc/hyyqc.github.io)
-[24郑爱萍](https://github.com/aipingzheng.github.io) 
-[25郑大强](https://github.com/xxtgongge.github.io)
-[27黄荣基](https://github.com/ss507/jdgfissb)
-[29谢秀提](https://github.com/xiexiuti/xiexiuti.github.io)
-[30毛杰](https://github.com/wdwz/wdwz.github.io/)
-[31王志斌](https://github.com/connnot/connnot.github.io)
-[32吴昊](https://github.com/charygus/charygus.github.io)
-
-[33赵凯峰](https://github.com/Mometime/mometime.github.io)
-[34张奎骁](https://github.com/waseni/waseni.github.io)
-[35郑钟楠](https://github.com/279315363/279345363.github.io)
-[36陈兴博](https://github.com/anxiaohui/anxiaohui.github.io)
-[37杨虹](https://github.com/misshong/misshong.github.io)
-[38刘毅梅](https://github.com/gcllym/gcllym.github.io)
-[39王丽娜](https://github.com/waseni/waseni.github.io)
-[40童伟键](https://github.com/twjznb/twjznb.github.io)
-41伍吉康
 
 ## 课程活动
 1. 注册github账号，新建**用户名.github.io**仓库，确保可以在线浏览。
