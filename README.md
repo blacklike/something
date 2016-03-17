@@ -2,13 +2,16 @@
 # 课程练习
 
 ## 文本格式化
-[测试练习](text.html)  [练习预览](http://zptcweb.github.io/text.html)
+[测试练习](text.html)  [练习预览](http://blacklike.github.io/text.html)
 
 ## 图片测试
 [图片练习](img.html)  [图片预览](http://blacklike.github.io/img.html)
 
+## 链接
+[链接练习](wy.html)  [列表预览](http://blacklike.github.io/wy.html)
+
 ## 列表
-[列表练习](img.html)  [列表预览](http://zptcweb.github.io/list.html)
+[列表练习](img.html)  [列表预览](http://blacklike.github.io/list.html)
 # 课程主页 
 本课程以前端开发工程师为愿景，旨在培养学生的web前端开发能力，前端开发行业日新月异、发展迅速，因此在学习基础知识的同时开阔视野、学会学习才是重中之重，为达此目的，利用github开源此课程。
 
