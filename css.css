@@ -16,15 +16,19 @@ nav{
 h2{
 	color:#ffffff;
 }
+.io{
+	float:right;
+	text-align:center;
+}
 aside{
 	background-color:#FF69B4;
 	width:15em;
-	height:2em;
+	height:57em;
 }
-article{
+.po{
 	background-color:#FFB6C1;
 	width:15em;
-	height:55em;
+	height:40em;
 }
 footer{
 	background-color:#00FA9A;
