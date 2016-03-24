@@ -1,0 +1,40 @@
+header{
+	background-color:#5f9ea0;
+	width:62em;
+	height:12em;
+}
+h1{
+	font-size:62px;
+	text-align:center;
+	color:#ffffff;
+}
+nav{
+	background-color:#FF1493;
+	width:62em;
+	height:2em;
+}
+h2{
+	color:#ffffff;
+}
+aside{
+	background-color:#FF69B4;
+	width:15em;
+	height:2em;
+}
+article{
+	background-color:#FFB6C1;
+	width:15em;
+	height:55em;
+}
+footer{
+	background-color:#00FA9A;
+	width:62em;
+	height:5em;
+}
+#ma{
+	background-position:left;
+	background-color:#DDA0DD;
+	float:right;
+	width:30em;
+	height:38.5em;
+}
