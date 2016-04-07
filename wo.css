@@ -1,0 +1,129 @@
+body{
+	background-color:#7AEDFC;
+	background-image:url("http://img5.duitang.com/uploads/item/201307/22/20130722192550_4tWsr.thumb.224_0.gif");
+	background-repeat:repeat-x;
+    /*background-size:225px 180px;*/
+    padding:0;
+    margin:0;
+}
+p{
+	text-indent:2em;
+}
+header{
+	color:#FB0A05;
+	text-align:center;
+	font-size:60px;
+	font-style:oblique;
+}
+#huan{
+	color:#C267DA;
+}
+ul{
+	list-style-type:none;
+	margin:0;
+	padding-right:45px;
+}
+li{
+	display:inline;
+	float:right;
+	margin-right:170px;
+}
+ul a
+{
+font-weight:bold;
+color:#FFFFFF;
+background-color:#F1ADB9;
+text-align:center;
+padding:10px;
+text-decoration:none;
+}
+.xu{
+	margin-bottom:7em;
+}
+aside{
+	width:300px;
+	height:1000px;
+	border:2px solid #06BCBA;
+	background-color:#57BECB;
+
+}
+#biao{
+	color:#665CAE;
+	text-align:center;
+}
+.ze{
+	float:right;
+	width:1200px;
+	height:1000px;
+	border:2px solid #fff;
+	margin-right:35px;
+	background-color:#C8A8F7;
+}
+.er{
+	float:right;
+	width:1150px;
+	height:620px;
+	border:2px solid #fff;
+	margin-right:24px;
+	margin-top:25px;
+	background-color:#D8D0D0;
+}
+img{
+	float:left;
+	width:23em;
+	height:24em;
+	margin:5px;
+	border-right:1px solid #72A9DE;
+	margin-right:30px;
+}
+#a{
+	text-align:center;
+	font-size:25px;
+	color:#A734C6;
+}
+.diyi{
+	font-size:14px;
+	text-align:2em;
+	line-height:1.5;
+	padding:1px;
+}
+.dier,.diwu{
+	text-indent:0;
+	color:#997A36;
+}
+#b,#c{
+	color:#6E6D6C;
+}
+.disan,.disi{
+	border:2px dashed #fe0;
+}
+.diliu,.diqi,.diba,.dijiu{
+	text-indent:0;
+	width:95px;
+	height:20px;
+	background:#7071AD;
+}
+.ll{
+	color:#F34A92;
+}
+#hui{
+	color:#F30606;
+}
+.mm{
+	float:right;
+	width:1150px;
+	height:340px;
+	border:2px solid #fff;
+	margin-right:24px;
+}
+#d,#f,#g{
+	float:left;
+	width:15em;
+	height:19em;
+}
+#qi,#wi{
+	color:#EA15A7;
+}
+.nn{
+	color:#0A7B9A;
+}
