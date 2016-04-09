@@ -1,0 +1,37 @@
+<!doctype html>
+<html>   
+    <head>
+        <meta charset="UTF-8">   
+        <title>随机抽奖程序</title> 
+        <link rel="stylesheet" href="12.css">
+    </head>
+        <script type="text/javascript">
+            var arr = "01徐浩鹏,02李明豪,04尹飞燕,05全凯俊,07马驰傲,07张铸涛,08许丹妮,09陈浩,10杨登欢,12任军,13章宇凯,14潘佳琦,15裘家威,16李玲巧,17郑天阳,18范莎莎,19王永琪,21白逢喜,22夏远征,23李传访,24曾丽丽,25陈王超,26林群栋,27王瑶,28王浩,29叶圣辉,30阮盛威,31徐道聪,32高启中,34姚文辉,35倪浩,36鲁好德,37张天一,38李彦东,39刘小辉,41徐鹏" 
+            var allarr = arr.split(",")   
+            var num = allarr.length-1;
+            var timer;
+            function change(){ 
+                document.getElementById("pid").innerHTML = allarr[run(0,num)];   
+            }   
+            function start(){
+                clearInterval(timer);
+                timer = setInterval('change()',10); 
+            }
+            function end(){
+                 
+                clearInterval(timer);     
+            }
+            function run(min,max){
+                 
+                return parseInt(Math.random()*(max-min+1));   
+            }   
+            </script>  
+    <body> 
+        <h1 class="h1c">幸运同学</h1>
+        <div>
+            <p id="pid" name="pid">请单击开始抽奖</p>
+        </div>   
+        <button onClick="start()" accesskey="s">开始抽奖</button>   
+        <button onClick="end()" accesskey="o">停止</button>  
+    </body>   
+</html>
