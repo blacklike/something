@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>链接测试</title>
+	<style>
+  body{
+    background:#E58479
+  }
+	a{
+		font-size:60px;
+    float:left;
+    margin-left:700px;
+    margin-top:300px;
+	}
+     a:link{
+     	color:#B670B5;
+     	background:#74E7EB;
+     	text-decoration:none;
+     }
+     a:visited{
+     	color:#4A15B0;
+     }
+     a:hover{
+     	color:#F7058E;
+     	background:#B5B4A6;
+     }
+     a:active{
+     	color:#000000;
+     }
+     .q{
+		width: 20px;
+      height:50px;
+      border: 2px solid #ddd;
+      border-radius:50%;
+      position: relative;
+      left:100px;
+     top:150px;
+	}
+	.q:hover .a{
+      width:500px;
+      height: 500px;
+      background:url("http://img.hb.aicdn.com/f5c3f9af657101205aeabf396efd40b70e11d8e125ec7-GINQAX_fw658") no-repeat;
+      position: absolute;
+      left:80px;
+      top:0px;
+      transition:all 1s;
+      /*opacity:0;*/
+     
+    }
+    .q:hover .a{
+      opacity: 1;
+    }
+   /*.q1{
+   	width:50px;
+   	height:70px;
+   	background:#276E89;
+   }*/
+	</style>
+</head>
+<body>
+<a href="http://huaban.com/" target="_blank">花瓣</a>
+ <div class="q">
+    <div class="a"></div>
+  </div>
+  <div class="q1"></div>
+</body>
+</html>
