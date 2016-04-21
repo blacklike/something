@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>菜单</title>
+	<style>
+       body{
+       	text-align:center;
+       	padding-top:150px;
+       }
+       menu{
+       	display: inline-block;
+	    border-radius:6px; 
+       }
+       .menu a{
+       	text-decoration:none;
+       	/*outline:none;*/
+       	display:block;
+       	float:left;
+       	padding-left:20px;
+       	font-size:20px;
+       	line-height:40px;
+       	color:#fff;
+       	padding:0 10px 0 50px;
+       	background:url("1.jpg")10px 20px/50px 60px ;
+       	border: 1px solid black; 
+       	box-shadow: 0 0px 15px 3px rgba(0, 0, 0, 0.8);
+       	position: relative;
+       }
+       .menu a:first-child {
+	    padding-left:40px;
+	    border-radius:5px 0 0 6px;
+       }
+       /*.menu a:first-child:before {
+	    left:10px;
+       }*/
+       .menu a:last-child {
+	    border-radius: 0 5px 5px 0; 
+       }
+       .menu a.active, .menu a:hover{
+	    background:url("2.jpg");
+       }
+      /* .menu a:after {
+	    content: '';
+	    position: absolute;
+	    top: 0; 
+	    right: -18px;
+	    width: 36px; 
+	    height: 36px;
+	    transform: scale(1,0.7) rotate(50deg);
+	    z-index: 1;
+		background:url("3.jpg");
+		/*box-shadow: 
+		1px -2px 0 2px rgba(0, 0, 0, 0.4), 
+		3x -3px 0 5px rgba(255, 255, 255, 0.1);
+		border-radius: 0 5px 0 50px;
+       } */
+	    /*.menu a:last-child:after {
+	    content: none;
+       }*/
+	    /*.menu a:before {
+	    content: counter(title);
+	    counter-increment: title;
+	    border-radius: 100%;
+	    width: 20px;
+	    height: 20px;
+	    line-height: 20px;
+	    margin: 8px 0;
+	    position: absolute;
+	    top: 0;
+	    left: 30px;
+	    background:url("4.jpg")
+       }*/
+	</style>
+</head>
+<body>
+	<div class="menu">
+		<a href="#">1    首页</a>
+		<a href="#">2    动态</a>
+		<a href="#">3    娱乐</a>
+		<a href="#">4    留言</a>
+	</div>
+</body>
+</html>
