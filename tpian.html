@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>图片</title>
+	<style>
+    figure{
+    width:1150px;
+    height: 700px;
+    border:10px solid #fff;
+    box-shadow: 0px 0px 20px 0px #000;
+    overflow:hidden;  
+    position:relative;
+    }
+    figure img{
+     transition:all.3s ;
+      transform:scale(1)
+    }
+    figure figcaption{
+      position:absolute;
+      text-align:center;
+      left:0;
+      z-index:3;
+      bottom:0;
+      background-color:rgba(255,255,255,0);
+      height: 120px;
+      width: 100%;
+      color:rgba(0,60,0,0)
+    }
+    figure:hover img{
+     transform:scale(1.1)
+    }
+    figure:hover figcaption{
+      color:rgba(0,60,0,1);
+      background-color:rgba(255,255,255,0.3);
+    }
+    figcaption{
+      font-style:italic;
+       font-weight:900;
+      letter-spacing:8px;
+      font-size:40px;    
+        }
+	</style>
+</head>
+<body>
+	<div class="tu">
+		<figure>
+			<figcaption>婚纱摄影</figcaption>
+			<img src="http://www.weddingritz.com/files/attach/images/462227/849/242/012/7a3091ecae908896b75ab9f8bb1439c7.jpg" alt="">
+		</figure>
+	</div>
+</body>
+</html>
