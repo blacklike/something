@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+     .clearfix::after{
+      content:"";
+      width: 0;
+      height: 0;
+      font-size:0;
+      display: block;
+      clear: both;
+    }
+    .top{
+      width: 1000px;
+      margin: 10px auto;
+      position: relative;
+    }
+    .top .logo{
+      width: 193px;
+      height: 40px;
+      float: left;
+    }
+    .top .search{
+      width: 325px;
+      height: 32px;
+      float: right;
+    }
+    .top .search #key{
+      width:290px;
+      height:28px;
+      outline:none;
+      border:1px solid #ccc;
+      text-indent:10px;
+      float:left;
+    }
+    .top .search #key:focus{
+      border:1px solid #FC6B2D;
+    }
+    .top .search #btn{
+      float:left;
+      outline:none;
+      border:none;
+      width:30px;
+      height:30px;
+      text-indent: -9999em;
+      background: url("http://dl.pinyin.sogou.com/index/header/search_box.png");
+      background-position:-293px 0;
+    }
+    .banner{
+      height:400px;
+      background: url("http://dl.pinyin.sogou.com/index/2.0/banner_8.0.2.jpg") center;
+    }
+    .banner .btn{
+      width: 241px;
+      height: 60px;
+      display: inline-block;
+      background: url("http://dl.pinyin.sogou.com/index/2.0/btn_down_one_8.0.1.png") left top;
+      position: absolute;
+      right:140px;
+      top:300px;
+    }
+  </style>
+</head>
+<body>
+  <div class="top clearfix">
+    <div class="logo">
+      <a href="http://pinyin.sogou.com/">
+        <img src="http://dl.pinyin.sogou.com/index/header/logo.png" alt="">
+      </a>
+    </div>
+    <div class="search">
+      <input type="text" name="key" id="key">
+      <input type="submit" id="btn" value="搜索">
+    </div>
+  </div>
+  <div class="banner">
+    <div class="top">
+      <a class="btn" href="#"></a>
+    </div>
+  </div>
+</body>
+</html>
