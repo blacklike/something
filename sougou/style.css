@@ -234,6 +234,9 @@ body,ul,form{
 	font-size: 15px;
     font-family: '微软雅黑','Arial';
 }
+.content .main .ul_li3 li .ci a:hover{
+	color:#FF8957;
+}
 .content .sidebar{
 	float:right;
 	width:266px;
