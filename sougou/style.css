@@ -1,0 +1,335 @@
+.clearfix::after{
+	content:"";
+	width:0;
+	height:0;
+	font-size:0;
+	display:block;
+	clear:both;
+}
+body,ul,form{
+	margin:0;
+	padding:0;
+}
+.top{
+	width:1000px;
+	margin:10px auto;
+	position:relative;
+}
+.top .logo{
+	float:left;
+	width:193px;
+	height:40px;
+	/*background:url("http://dl.pinyin.sogou.com/index/header/logo.png") no-repeat;*/
+}
+.top .search{
+	float:right;
+	width:325px;
+	height:32px;
+	margin-top:5px;
+	background:url("http://dl.pinyin.sogou.com/index/header/search_box.png") no-repeat;
+}
+.top .search form #key{
+	float:left;
+	outline:none;
+	width:292px;
+	height:28px;
+	border:1px solid #ccc;
+	text-indent:10px;
+}
+.top .search form #key:focus{
+	border:1px solid #FC6B2D;
+}
+.top .search form #subm{
+	float:left;
+	width:31px;
+	height:32px;
+	border:none;
+	outline:none;
+	text-indent:-500em;
+    background:url("http://dl.pinyin.sogou.com/index/header/search_box.png") no-repeat;
+    background-position:-293px 0;
+}
+.menu{
+	  height: 40px;
+      background-color: #eC6e2c;
+}
+.menu ul.first_line{
+	width:1000px;
+	margin:0px auto;
+	padding:0;
+}
+.menu ul.first_line li{
+	float:left;
+	list-style-type:none;
+	padding: 11px 20px;
+	margin:0 30px 0 30px;
+}
+.menu ul.first_line li a{
+	color:#fff;
+    font-family: '微软雅黑','Arial';
+	text-decoration:none;
+}
+.menu ul.first_line li:hover{
+	background:#e94f0d;
+}
+.menu ul.first_line li.act{
+	background:#e94f0d;
+}
+.bannerCon{
+	width:1900px;
+	height:400px;
+	background:url("http://dl.pinyin.sogou.com/index/2.0/banner_8.0.2.jpg") no-repeat;
+	background-position:center center;
+}
+.bannerCon .banner{
+	width:1000px;
+	height:400px;
+	margin:0 auto;
+	position:relative;
+}
+.bannerCon .banner .date{
+	position:absolute;
+	right:280px;
+	top:250px;
+	font-size: 14px;
+    font-family: '微软雅黑','Arial';
+}
+.banner .version{
+	position:absolute;
+	right:190px;
+	top:250px;
+	font-size: 14px;
+    font-family: '微软雅黑','Arial';
+}
+.banner .support{
+	position:absolute;
+	right:200px;
+	top:270px;
+	font-size: 14px;
+    font-family: '微软雅黑','Arial';
+}
+.banner .download{
+	position:absolute;
+	right:185px;
+	top:300px;
+	width:241px;
+	height:60px;
+	background:url("http://dl.pinyin.sogou.com/index/2.0/btn_down_one_8.0.1.png") no-repeat;
+}
+.banner .download:hover{
+	width:241px;
+	height:100px;
+	background:url("http://dl.pinyin.sogou.com/index/2.0/btn_down_one_8.0.1.png") no-repeat;
+	background-position:0px -60px;
+}
+.banner .qrcode{
+	position:absolute;
+	right:0px;
+	top:250px;
+	width:89px;
+	height:89px;
+	background:url("http://dl.pinyin.sogou.com/index/2.0/mobile_qrcode_7.7.png") no-repeat;
+}
+.banner .mobileDown{
+	position:absolute;
+	right:0px;
+	top:340px;
+	width:90px;
+	height:22px;
+	background:url("http://dl.pinyin.sogou.com/index/2.0/btn_down_mobile_8.0.1.png") no-repeat;
+}
+.content{
+	width:1000px;
+	margin:0 auto;
+}
+.content .main{
+	float:left;
+}
+.content .main .main_title1{
+	width:699px;
+	height:29px;
+	background:url("http://dl.pinyin.sogou.com/index/2.0/side_title.png") no-repeat;
+}
+.content .main ul{
+	width:700px;
+	margin-right:0px;
+}
+.content .main ul.ul_li1 li{
+	float:left;
+	width:333px;
+	height:157px;
+	background:url("http://dl.pinyin.sogou.com/index/2.0/skin_border.png") no-repeat;
+	margin-bottom:20px;
+}
+.content .main ul.ul_li1 li.sk_li{
+	margin-right:34px;
+}
+.content .main ul li .img a img{
+	margin:6px;
+}
+.content .main ul li .interpret_con{
+	width:333px;
+	height:26px;
+}
+.content .main ul li .interpret_con .int_con a{
+	float:left;
+	text-decoration:none;
+	color:#777;
+	margin-top:5px;
+	font-size: 14px;
+    font-family: '微软雅黑','Arial';
+}
+.content .main ul li .interpret_con .int_con a:hover{
+	 color: #FF8957;
+}
+.content .main ul li .interpret_con .int_con{
+	margin-top:6px;
+}
+.content .main ul li .interpret_con .int_down a{
+	float:right;
+    width:73px;
+    height:26px;
+    background:url("http://dl.pinyin.sogou.com/index/2.0/download_list_hover.png") no-repeat;
+    opacity:0;
+}
+.content .main ul li .interpret_con .int_down a:hover{
+	opacity:1;
+    background:url("http://dl.pinyin.sogou.com/index/2.0/download_list_hover.png") no-repeat;
+}
+.content .main .main_title2{
+	float:left;
+	width:699px;
+	height:24px;
+	background:url("http://dl.pinyin.sogou.com/index/2.0/ex_func_title.png") no-repeat;
+}
+.content .main ul.ul_li2 li,.content .main ul.ul_li3 li{
+	float:left;
+	margin-right:32px;
+}
+.content .main ul.ul_li2 li.last_list,.content .main ul.ul_li3 li.last_list{
+	margin-right:0;
+}
+.content .main ul.ul_li2 li .btn_i{
+	width:76px;
+	height:23px;
+	background:url("http://dl.pinyin.sogou.com/index/2.0/down_ex_func.png") no-repeat;
+	margin:10px 6px;
+}
+.content .main ul.ul_li2 li .btn_i:hover{
+	background:url("http://dl.pinyin.sogou.com/index/2.0/down_ex_func.png") no-repeat;
+	background-position: 0 -23px;
+}
+.content .main .main_title3{
+	float:left;
+	width:699px;
+	height:18px;
+	background:url("http://dl.pinyin.sogou.com/index/2.0/dict_show_title.png") no-repeat;
+}
+.content .main .ul_li3 li .ci{
+	margin:10px 15px;
+}
+.content .main .ul_li3 li .ci a{
+	text-decoration:none;
+	color:#777;
+	font-size: 15px;
+    font-family: '微软雅黑','Arial';
+}
+.content .sidebar{
+	float:right;
+	width:266px;
+	margin-top:14px;
+/*	border:1px solid #000;*/
+}
+.content .sidebar .new_activity_title{
+	width:266px;
+	height:29px;
+	background:url("http://dl.pinyin.sogou.com/index/2.0/new_activity.png") no-repeat;
+}
+.content .sidebar .sid_li li{
+	width:266px;
+	height:33px;
+	background:url("http://dl.pinyin.sogou.com/index/2.0/activity_bg.png") no-repeat;
+}
+.content .sidebar .sid_li li.li_a a{
+	text-decoration:none;
+	color:#ff0000;
+	font-size: 15px;
+    font-family: '微软雅黑','Arial';
+}
+.content .sidebar .sid_li li.li_b a{
+	text-decoration:none;
+	color:#777;
+	font-size: 15px;
+    font-family: '微软雅黑','Arial';
+}
+.content .sidebar .sid_li li a:hover{
+	color:#FF8957;
+}
+.content .sidebar .sid_li li .link_a{
+	padding-top:5px;
+	padding-left:16px;
+}
+.content .sidebar .img_secoud{
+	margin-top:10px;
+	width:266px;
+	height:174px;
+	background:url("http://dl.pinyin.sogou.com/index/2.0/focus_ewn.png") no-repeat;
+}
+.content .sidebar .img_third{
+	width:265px;
+	height:182px;
+	margin-top:10px;
+	background:url("http://dl.pinyin.sogou.com/index/2.0/download_list.2.5.2.jpg") no-repeat;
+}
+.content .sidebar .img_third li {
+	height: 60px;
+    margin: 1px;
+    position: relative;
+}
+    
+.content .sidebar .img_third li a {
+	position: absolute;
+    right: 12px;
+    top: 18px;
+    width: 73px;
+    height: 26px;
+}
+    
+.content .sidebar .img_third li a:hover {
+    background: url("http://dl.pinyin.sogou.com/index/2.0/download_list_hover.png") 0 0;
+}
+ .footer {
+ 	margin-top: 60px;
+    padding:60px 0;
+    height:60px;
+    background-color: #eee;
+    text-align: center;
+}
+    
+.footer .skin {
+    font-size:14px;
+    color: #aaa;
+    background: url("http://dl.pinyin.sogou.com/index/skin_icon.png") no-repeat left top;
+    width: 450px;
+    margin: 0px auto 30px;
+}
+    
+.footer .skin a {
+    text-decoration: none;
+    color: #aaa;
+}
+    
+.footer .link {
+	padding-bottom:10px;
+    font-size: 12px;
+    color: #888;
+}
+    
+.footer .link a {
+    text-decoration: none;
+    color: #888;
+}
+    
+.footer .link a:hover {
+    text-decoration: underline;
+}
