@@ -64,6 +64,17 @@ body,ul,form{
 	padding: 11px 20px;
 	margin:0 30px 0 30px;
 }
+.menu ul.first_line li.zi{
+	position:relative;
+}
+.menu ul.first_line li.zi .new{
+	position:absolute;
+	width:26px;
+	height:14px;
+	background:url("http://dl.pinyin.sogou.com/index/2.0/new.png");
+	top:-15px;
+	right:17px;
+}
 .menu ul.first_line li a{
 	color:#fff;
     font-family: '微软雅黑','Arial';
@@ -76,7 +87,7 @@ body,ul,form{
 	background:#e94f0d;
 }
 .bannerCon{
-	width:1900px;
+	/*width:1900px;*/
 	height:400px;
 	background:url("http://dl.pinyin.sogou.com/index/2.0/banner_8.0.2.jpg") no-repeat;
 	background-position:center center;
