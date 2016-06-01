@@ -89,8 +89,68 @@ div.banner{
 .footer .foot{
 	width:1100px;
 	margin:0 auto;
-	border:1px solid #000;
+/*	border:1px solid #000;*/
+}
+.footer .foot .bottomLink{
+	float:left;
+	margin-top:50px;
+}
+.footer .foot .bottomLink a{
+	text-decoration:none;
+	font-family: "Microsoft YaHei","微软雅黑",tahoma,arial,simsun,"宋体";
+	font-size: 15px;
+	color: #333;
 }
 .footer .foot .contactUs{
-	
+	float:right;
+	width:200px;
+	height:20px;
+	margin-top:50px
+}
+.footer .foot .contactUs ul li{
+	float:right;
+	margin-right:10px;
+}
+.footer .foot .contactUs ul a.weixin{
+	display:block;
+	width:30px;
+	height:26px;
+	background:url("../images/ico_footer.png");
+/*	font-size:10px;*/
+/*	text-indent:-999em;*/
+/*    position:relative;*/
+}
+.footer .foot .contactUs ul li{
+	position:relative;
+}
+.footer .foot .contactUs ul a.weixin img{
+	position:absolute;
+	top:28px;
+	left:-60px;
+	width:180px;
+	height:180px;
+	opacity:0;
+	-webkit-transition:opacity 1s;
+}
+.footer .foot .contactUs ul a.weixin:hover img{
+	opacity:1;
+}
+.footer .foot .contactUs ul a.weibo{
+	display:block;
+	width:31px;
+	height:26px;
+	background:url("../images/ico_footer.png");
+	background-position:-46px 0;
+	/*font-size:5px;*/
+	text-indent:-999em;
+}
+.footer .foot .copyright{
+	float:left;
+	margin-top:40px;
+}
+.footer .foot .copyright a{
+	text-decoration:none;
+	font-family: "Microsoft YaHei","微软雅黑",tahoma,arial,simsun,"宋体";
+	font-size: 15px;
+	color: #333;
 }
