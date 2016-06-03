@@ -93,19 +93,19 @@ div.banner{
 }
 .footer .foot .bottomLink{
 	float:left;
-	margin-top:75px;
+	margin-top:80px;
 }
 .footer .foot .bottomLink a{
 	text-decoration:none;
 	font-family: "Microsoft YaHei","微软雅黑",tahoma,arial,simsun,"宋体";
-	font-size: 15px;
+	font-size: 13px;
 	color: #333;
 }
 .footer .foot .contactUs{
 	float:right;
 	width:200px;
 	height:20px;
-	margin-top:75px
+	margin-top:80px
 }
 .footer .foot .contactUs ul li{
 	float:right;
@@ -154,7 +154,11 @@ div.banner{
 .footer .foot .copyright a,.footer .foot .copyright p{
 	text-decoration:none;
 	font-family: "Microsoft YaHei","微软雅黑",tahoma,arial,simsun,"宋体";
-	font-size: 13px;
+	font-size: 11px;
 	color: #333;
 	padding-top:10px;
+}
+.footer .foot .copyright #p_copy{
+    color: #aaa;
+    font-size: 10px;	
 }
