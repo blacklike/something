@@ -54,7 +54,7 @@ div.banner{
 	margin:0px auto; 
 }
 .content h2.h2{
-	float: left;
+	/*float: left;*/
 	font-family: "Microsoft YaHei","微软雅黑",tahoma,arial,simsun,"宋体";
 	font-size: 24px;
     color: #333;
@@ -197,4 +197,16 @@ div.banner{
     line-height: 30px;
     color: #666;
     padding-top: 16px;
+}
+.banner_n{
+	height:260px;
+	background:url("../images/news_banner.jpg") center top;
+}
+.content1 .news_list{
+	float:left;
+}
+.content1 .news_list .li{
+	width:200px;
+	height:100px;
+	border:1px solid #000;
 }
