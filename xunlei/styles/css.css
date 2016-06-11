@@ -1,0 +1,99 @@
+body{
+	margin:0;
+	min-width:100%;
+	min-height:100%;
+	background:#aaa;
+}
+.page{
+	position:fixed;
+	width:auto;
+	height:auto;
+	min-width:100%;
+	min-height:100%;
+}
+.logo img{
+	width:150px;
+	height:auto;
+	margin-left:50px;
+	margin-top:20px;
+}
+.page .controls{
+	width: 325px;
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	bottom:50px;
+}
+.page .controls a{
+	text-decoration: none;
+	display: inline-block;
+	text-indent: -999em;
+	width:50px;
+	height: 65px;
+	margin-right:25px;
+	background: url(../images/ic_spr.png) no-repeat;
+
+}
+.page .controls a:nth-of-type(1){
+	background-position: 0px 0px;
+}
+.page .controls a:nth-of-type(2){
+	background-position: -67px 0px;
+}
+.page .controls a:nth-of-type(3){
+	background-position: -137px 0px;
+}
+.page .controls a:nth-of-type(4){
+	background-position: -260px 0px;
+}
+.page .controls a:nth-of-type(1):hover{
+	background-position: 0px -69px;
+}
+.page .controls a:nth-of-type(2):hover{
+	background-position: -67px -69px;
+}
+.page .controls a:nth-of-type(3):hover{
+	background-position: -137px -69px;
+}
+.page .controls a:nth-of-type(4):hover{
+	background-position: -260px -69px;
+}
+.page .controls .img{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: auto;
+	height: auto;
+	min-width: 100%;
+	min-height: 100%;
+	background: url(../images/bg_shoulei.jpg) center;
+	z-index: -1;
+	opacity: 0;
+	transition:opacity .5s;
+}
+.page .controls div:nth-of-type(1){
+	background: url(../images/bg_shoulei.jpg) center;
+	opacity: 1;
+}
+.page .controls div:nth-of-type(2){
+	background: url(../images/bg_xnet.jpg) center;
+}
+.page .controls div:nth-of-type(3){
+	background: url(../images/bg_member.jpg) center;
+}
+.page .controls div:nth-of-type(4){
+	background: url(../images/bg_xav.jpg) center;
+}
+.page .controls a:nth-of-type(1):hover~div:nth-of-type(1){
+	opacity: 1;
+}
+.page .controls a:nth-of-type(2):hover~div:nth-of-type(2){
+	opacity: 1;
+}
+.page .controls a:nth-of-type(3):hover~div:nth-of-type(3){
+	opacity: 1;
+}
+.page .controls a:nth-of-type(4):hover~div:nth-of-type(4){
+	opacity: 1;
+}
