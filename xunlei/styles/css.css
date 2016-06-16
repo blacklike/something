@@ -4,6 +4,14 @@ body{
 	min-height:100%;
 	background:#aaa;
 }
+.clearfix::after{
+	content:"";
+	width:0;
+	height:0;
+	font-size:0;
+	display:block;
+	clear:both;
+}
 .page{
 	position:fixed;
 	width:auto;
@@ -17,13 +25,38 @@ body{
 	margin-left:50px;
 	margin-top:20px;
 }
+.page .head_title{
+	position: absolute;
+	right:0px;
+	top:30px;
+	width:350px;
+	height:auto;
+	/*border:3px solid #fff;*/
+}
+.page .head_title li{
+	float:left;
+	width:100px;
+	height:30px;
+	text-align:center;
+	line-height:30px;
+	border:3px solid #fff;
+	margin-right:50px;
+}
+.page .head_title li:nth-of-type(2){
+	margin-right:0px;
+}
+.page .head_title li a{
+	text-decoration:none;
+	color:#fff;
+	font-weight:bold;
+}
 .page .controls{
 	width: 325px;
 	position: absolute;
 	margin: auto;
 	left: 0;
 	right: 0;
-	bottom:50px;
+	bottom:30px;
 }
 .page .controls a{
 	text-decoration: none;
