@@ -1,0 +1,131 @@
+body{
+	margin:0;
+	min-width:100%;
+	min-height:100%;
+	/*background:#eee;*/
+}
+.clearfix::after{
+	content:"";
+	width:0;
+	height:0;
+	font-size:0;
+	display:block;
+	clear:both;
+}
+.content{
+	position:fixed;
+	width:auto;
+	height:auto;
+	min-width:100%;
+	min-height:100%;
+}
+.content .top .main_img{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: auto;
+	height: auto;
+	min-width: 100%;
+	min-height: 100%;
+	background: url("../images/bg.jpg") center;
+	z-index:-1;
+}
+.content .top .logo_l{
+	float:left;
+	width:69px;
+	height:105px;
+	margin-top:20px;
+	background:url("../images/awwwards_siteoftheday_w_left.png") no-repeat;
+}
+.content .top .logo_r{
+	float:right;
+	width:69px;
+	height:105px;
+	margin-top:20px;
+	background:url("../images/startdrag.png") no-repeat;
+}
+.content .main .in0{
+	position:absolute;
+	right:350px;
+	top:270px;
+}
+.content .main .in1{
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	width:918px;
+	height:508px;
+	margin:auto;
+}
+.content .main .in2{
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	width:918px;
+	height:508px;
+	margin:auto;
+}
+.content .main .in2 .logo1{
+	position:absolute;
+	top:110px;
+	left:100px;
+}
+.content .menu{
+	position:absolute;
+	bottom:60px;
+	width:642px;
+	height:87px;
+	background:url("../images/navbg.png") no-repeat;
+}
+.content .menu ul{
+	position:relative;
+	left:190px;
+	top:0px;
+}
+.content .menu ul li{
+	float:left;
+    width: 87px;
+    height: 87px;
+    text-align:center;
+/*    background:url("../images/nava.png") no-repeat;*/
+}
+.content .menu ul li a{
+	font:13px "微软雅黑",Arial;
+    color: #737373;
+    height:87px;
+    line-height:87px;
+    /*position:relative;
+    top:-50px;*/
+    /*background:url("../images/nava.png") no-repeat;*/
+}
+/*.content .menu ul li{
+	background:url("../images/nava.png") no-repeat;
+}
+.content .menu ul li:nth-of-type(1){
+	background:url("../images/nava.png") no-repeat;
+	opacity:1;
+}*/
+.content .menu ul li img{
+	position:relative;
+	top:-85px;
+	z-index:-1;
+	opacity:0;
+	transition:opacity .5s;
+}
+.content .menu ul li #img_1{
+	opacity:1;
+
+}
+.content .menu li a:hover~img{
+	transform:translatex();
+	opacity:1;
+}
+.content .menu .last_img{
+	 width: 87px;
+     height: 87px;
+     background:;
+}
