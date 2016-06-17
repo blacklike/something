@@ -40,7 +40,7 @@ body{
 	text-align:center;
 	line-height:30px;
 	border:3px solid #fff;
-	margin-right:50px;
+	margin-right:100px;
 }
 .page .head_title li:nth-of-type(2){
 	margin-right:0px;
@@ -129,4 +129,18 @@ body{
 }
 .page .controls a:nth-of-type(4):hover~div:nth-of-type(4){
 	opacity: 1;
+}
+.head_title .titles{
+	position:absolute;
+	top:38px;
+	right:0px;
+	/*display:block;*/
+	width:180px;
+	height:200px;
+	background:#aaa;
+	z-index:-2;
+	transition:all .5s;
+}
+.head_title .titles:target{
+	z-index:7;
 }
