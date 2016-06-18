@@ -337,6 +337,20 @@ body{
 	z-index:7;
 	opacity:1;
 }
+.h_main1 .two_top{
+	position:absolute;
+	top:-29px;
+	right:0;
+	width: 29px;
+	height:29px;
+	background:url("../images/close.png") no-repeat;
+	background-position:0 0;
+	transition:background-position .5s;
+}
+.h_main1 .two_top:hover{
+	background:url("../images/close.png") no-repeat;
+	background-position:0 -29px;
+}
 .h_main1 .two_fo{
 	position:absolute;
 	bottom:0px;
@@ -351,4 +365,42 @@ body{
 	width:31px;
 	height:14px;
 	background:url("../images/wjt.png") no-repeat;
+}
+.h_main1 .con li:nth-of-type(1){
+	position:absolute;
+	top:20px;
+	left:20px;
+	width:300px;
+	height:260px;
+	border:10px solid #ddd;
+}
+.h_main1 .con li:nth-of-type(2){
+	position:absolute;
+	top:20px;
+	left:350px;
+	width:300px;
+	height:260px;
+	border:10px solid #ddd;
+}
+.h_main1 .con .show1 img{
+	width:300px;
+	height:auto;
+}
+.h_main1 .con a{
+	position:absolute;
+	bottom:-50px;
+	color:#aaa;
+	font:20px "微软雅黑",Arial;;
+}
+/*.h_main1 .con .show2{
+	position:absolute;
+	top:20px;
+	left:px;
+	width:300px;
+	height:260px;
+	border:10px solid #ddd;
+}*/
+.h_main1 .con .show2 img{
+	width:300px;
+	height:auto;
 }
