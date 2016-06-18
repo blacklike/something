@@ -44,7 +44,7 @@ body{
 	margin-top:20px;
 	background:url("../images/startdrag.png") no-repeat;
 }
-.content .main .in0{
+/*.content .main .in0{
 	position:absolute;
 	right:-200px;
 	top:270px;
@@ -75,7 +75,94 @@ body{
 	position:absolute;
 	top:110px;
 	left:100px;
+}*/
+.content .main{
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	width:1000px;
+	height:100%;
+	background:#eee;
+	margin:auto;
 }
+.content .main .main_top_img img{
+	width:1000px;
+	height:350px;
+	opacity:.7;
+}
+.content .main .mine{
+	position:absolute;
+	top:350px;
+	left:400px;
+	width:200px;
+	height:200px;
+	border:2px solid #fff;
+	background:url("../images/head_img.png") center center;
+	overflow:hidden;
+	border-radius:50%;
+	z-index:3;
+}
+.content .main .article{
+	position:absolute;
+	top:350;
+	left:0;
+	width:1000px;
+	height:1000px;
+/*	border:1px solid #000;*/
+}
+.content .main .article .left{
+	float:left;
+	width:500px;
+	height:100%;
+	border-right:3px double #000;
+}
+.content .main .article .right{
+	float:right;
+	right:0;
+	width:450px;
+	height:100%;
+}
+.content .main .article .left dl{
+	width:500px;
+	height:80px;
+/*	border: 1px solid #000;*/
+}
+.content .main .article .left dl dt,.content .main .article .right dl dt{
+	text-align:center;
+	color:#888;
+    font:30px 微软雅黑, Arial;
+}
+.content .main .article .left dl dd,.content .main .article .right dl dd{
+	text-align:center;
+	color:#888;
+    font:20px 微软雅黑, Arial;
+}
+.content .main .article .left .work,.content .main .article .right .work{
+	width:400px;
+	height:100%;
+	margin:0 50px;
+}
+.content .main .article .left .work .work_t,.content .main .article .right .work .work_t{
+	width:400px;
+	height:50px;
+	border-left:7px solid #aaa;
+}
+.content .main .article .right .work .work_t{
+	position:absolute;
+	top:80px;
+	right:-10px;
+}
+.content .main .article .left .work .work_t h2,.content .main .article .right .work .work_t h2{
+	padding-top:15px;
+	padding-left:5px;
+}
+/*.content .main .mine .img_1{
+	width:200px;
+	height:auto;
+	
+}*/
 .content .search{
 	position:absolute;
 	right:100px;
