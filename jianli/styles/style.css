@@ -404,3 +404,11 @@ body{
 	width:300px;
 	height:auto;
 }
+.h_main1 .two_ic1{
+	position:absolute;
+	bottom:-14px;
+	left:350px;
+	width:31px;
+	height:14px;
+	background:url("../images/ojt.png") no-repeat;
+}
