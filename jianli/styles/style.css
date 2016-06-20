@@ -154,6 +154,67 @@ body{
 	top:80px;
 	right:-10px;
 }
+
+/*.content .main .article .right .work .work_h .ban .xianshi{
+	position: absolute;
+	top:200px;
+	right:0px;
+	width:auto;
+	height:200px;
+	background:url("../images/1.jpg") no-repeat;
+	opacity:1;
+
+	transition:opacity,z-index .5s;
+}*/
+/*.content .main .article .right .work .work_h .ban img:hover+.xianshi{
+	opacity:1;
+	z-index:999;
+
+}*/
+.content .main .article .right .li_one{
+	position:absolute;
+	top:150px;
+	right:0px;
+	width:400px;
+	height:30px;
+	border-bottom:2px solid #ccc;
+}
+.content .main .article .right .li_one li{
+	list-style:georgian;
+	color:#666;
+	font-size:16px;
+	font-weight:bold;
+	margin-left:20px;
+	margin-bottom:15px;
+
+}
+.content .main .article .right .work .work_h{
+	position:absolute;
+	top:200px;
+	right:0px;
+	width:400px;
+	height:300px;
+	border-bottom:2px solid #ccc;
+}
+.content .main .article .right .work .work_h .ban{
+	margin-top:15px;
+}
+.content .main .article .right .work .work_h .ban li{
+	float:left;
+	margin-right:20px;
+	margin-bottom:80px;
+	width:100px;
+	height:80px;
+	/*border:1px solid #000;*/
+}
+.content .main .article .right .work .work_h .ban img{
+	width:auto;
+	height:60px;
+}
+.content .main .article .right .work .work_h .ban img:hover{
+	width:auto;
+	height:120px;
+}
 .content .main .article .left .work .work_t h2,.content .main .article .right .work .work_t h2{
 	padding-top:15px;
 	padding-left:5px;
@@ -163,6 +224,57 @@ body{
 	height:auto;
 	
 }*/
+.content .main .article .left .work .intr{
+	height:170px;
+	margin-top:20px;
+	margin-left:30px;
+}
+.content .main .article .left .work .intr p{
+	width:200px;
+	height:30px;
+	font-size:16px;
+	color:#555;
+	font-weight:bold;
+}
+.content .main .article .left .work .skill{
+	height:100px;
+	border-top:2px solid #aaa;
+}
+.content .main .article .left .work .skill .s_title{
+	margin-top:20px;
+	margin-left:30px;
+}
+.content .main .article .left .work .skill .s_title li{
+	float:left;
+	margin-right:40px;
+}
+.content .main .article .left .work .skill .s_title #p1{
+	width:50px;
+	height:50px;
+	text-align:center;
+	line-height:50px;
+	font-size:20px;
+	font-weight:bold;
+	border:1px solid #000;
+}
+.content .main .article .left .work .skill .s_title #p2{
+	margin-left:15px;
+	margin-top:5px;
+}
+/*.content .main .article .left .work .skill .s_title .ban{
+	width:80px;
+	height:50px;
+	background:url("../images/1.jpg") no-repeat center center;
+}*/
+.content .main .article .left .work .p{
+	float:right;
+	margin-top:20px;
+}
+.content .main .article .left .work .p p{
+	font-size:16px;
+	color:#555;
+	margin-top:10px;
+}
 .content .search{
 	position:absolute;
 	right:100px;
