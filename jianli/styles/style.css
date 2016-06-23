@@ -202,7 +202,7 @@ body{
 	position: absolute;
 	left:450px;
 	top:0px;
-	width:1000px;
+	width:1050px;
 	height:330px;
 	border:1px solid #000;
 }
@@ -215,6 +215,14 @@ body{
 /*	border:1px solid #000;*/
 }
 #three .th_content .intro dl dt,#three .th_content .intro dl dd{
-	margin-bottom:20px;
+	margin-bottom:13px;
 	font:20px "逐浪雅宋体",Arial;
+	color:#888;
+}
+#three .th_content .intro .ri{
+	position:absolute;
+	right:0;
+	width:500px;
+	height:300px;
+	border:1px solid #000;
 }
