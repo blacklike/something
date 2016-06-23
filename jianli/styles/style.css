@@ -3,6 +3,7 @@ body{
 	min-width:100%;
 	min-height:100%;
 	/*background:#eee;*/
+
 }
 .clearfix::after{
 	content:"";
@@ -58,7 +59,7 @@ body{
 }
 .content .menu{
 	position:absolute;
-	bottom:45px;
+	bottom:30px;
 	width:642px;
 	height:87px;
 	background:url("../images/navbg.png") no-repeat;
@@ -166,7 +167,7 @@ body{
 	left:100px;
 	bottom:-50px;
 	color:#777;
-	font:20px "微软雅黑",Arial;;
+	font:20px "微软雅黑",Arial;
 }
 .h_main1 .con .show2 img{
 	width:300px;
@@ -199,9 +200,21 @@ body{
 }
 #three .th_content .intro{
 	position: absolute;
-	right:0;
+	left:450px;
 	top:0px;
-	width:1400px;
+	width:1000px;
 	height:330px;
 	border:1px solid #000;
+}
+#three .th_content .intro dl{
+	position:absolute;
+	top:50px;
+	left:20px;
+	width:300px;
+	height:200px;
+/*	border:1px solid #000;*/
+}
+#three .th_content .intro dl dt,#three .th_content .intro dl dd{
+	margin-bottom:20px;
+	font:20px "逐浪雅宋体",Arial;
 }
