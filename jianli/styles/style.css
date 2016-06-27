@@ -190,39 +190,74 @@ body{
 /*	border:1px solid #000;*/
 }
 #three .th_content #book{
+	position: absolute;
+	top:15px;
+	left:-15px;
 	width:auto;
 	height:320px;
 }
 #three .th_content #myself{
 	position:absolute;
-	top:140px;
+	top:150px;
 	left:100px;
 }
 #three .th_content .intro{
 	position: absolute;
 	left:450px;
 	top:0px;
-	width:1050px;
+	width:1400px;
 	height:330px;
-	border:1px solid #000;
+	/*border:1px solid #000;*/
 }
 #three .th_content .intro dl{
 	position:absolute;
-	top:50px;
+	top:0px;
 	left:20px;
 	width:300px;
 	height:200px;
-/*	border:1px solid #000;*/
+	/*border-right:1px solid #000;*/
 }
-#three .th_content .intro dl dt,#three .th_content .intro dl dd{
+#three .th_content .intro dl dt,#three .th_content .intro .ri h2{
+	margin:15px 0;
+	font:25px "逐浪雅宋体",Arial;
+	color:#888;
+}
+#three .th_content .intro dl dd{
 	margin-bottom:13px;
 	font:20px "逐浪雅宋体",Arial;
 	color:#888;
+/*	border-right:1px solid #000;*/
 }
 #three .th_content .intro .ri{
 	position:absolute;
 	right:0;
-	width:500px;
-	height:300px;
+	width:900px;
+	height:330px;
+	/*border:1px solid #000;*/
+}
+#three .th_content .intro .ri #left{
+	float:left;
+	width:270px;
+	height:270px;
+	/*border:1px solid #000;*/
+}
+#three .th_content .intro .ri #right{
+	float:right;
+	width:600px;
+	height:270px;
 	border:1px solid #000;
+}
+#three .th_content .intro .ri #left li{
+	width: 100px;
+	height:50px;
+	border:3px solid #000;
+	text-align:center;
+	line-height:50px;
+	margin:5px 20px 12px 100px;
+}
+#three .th_content .intro .ri #left li p{
+	padding-top:12px;
+	font-weight:bold;
+	font:20px "逐浪雅宋体",Arial;
+	color:#888;
 }
