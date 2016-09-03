@@ -1,0 +1,237 @@
+body{
+	margin:0;
+	min-width:100%;
+	/*min-height:100%;*/
+	/*background:#eee;*/
+	overflow:hidden;
+}
+.clearfix::after{
+	content:"";
+	width:0;
+	height:0;
+	font-size:0;
+	display:block;
+	clear:both;
+}
+div.top,div.content{
+	width:1200px;
+	margin:10px auto;
+	/*overflow:hidden;*/
+}
+div.content{
+	height:1000px;
+}
+div.top div.logo1{
+	float:left
+}
+div.top div.logo1 img{
+	width:200px;
+	height:auto;
+}
+div.top div.FHsearch{
+	float:right;
+	margin-top:5px;
+}
+div.top div.FHsearch #btn{
+	outline:none;
+	border:none;
+	text-indent:-999em;
+	width:30px;
+	height:30px;
+	background:url("../images/sreach_logo.png"); 
+}
+div.top div.FHsearch #key{
+	outline:none;
+	border:1px solid #eee;
+	text-indent:2px;
+}
+div.top div.FHsearch #key:focus{
+	border:1px solid #ccc;
+}
+div.top ul.menu{
+	float:right;
+	margin-top:10px;
+	margin-right:100px;
+}
+div.top ul.menu li{
+	float:left;
+	text-align:center;
+	width:120px;
+	height:20px;
+	border-left:1px solid #ccc;
+	border-right:1px solid #ccc;
+}
+div.top ul.menu li a{
+	font-size:20px;
+	color:#666;
+	line-height:20px;
+}
+div.top ul.menu li a:hover{
+	color:#10df0b;
+}
+div.banner{
+	position:relative;
+	width:1920px;
+	height:600px;
+	background:url("../images/banner_logo.png");
+	background-position: 0 -2px;
+}
+div.banner ul.imgs{
+	position:absolute;
+	right:666px;
+	bottom:199px;
+}
+div.banner ul.imgs li{
+	float:right;
+	width:60px;
+}
+div.aboutFH{
+	position:relative;
+	width:1200px;
+	margin:0 auto;
+	height:150px;
+	/*border:1px solid #000;*/
+}
+div.aboutFH div.logo_about{
+	position:absolute;
+	top:-100px;
+	left:100px;
+	width:1000px;
+	height:200px;
+	background:url("../images/aboutFH.png");
+}
+/*div.aboutFH div.FHtit{
+	position:absolute;
+	top:-35px;
+	left:200px;
+}
+div.aboutFH div.FHtit h1{
+	font-size:30px;
+	color:#fff;
+}
+div.aboutFH div.FHtit h2{
+	font-size:20px;
+	line-height:20px;
+	color:#fff;
+	text-align:center;
+}*/
+div.aboutFH div.FHintro{
+	position:absolute;
+	top:-55px;
+	right:180px;
+	width:550px;
+	height:100px;
+	/*border:1px solid #000;*/
+}
+div.aboutFH div.FHintro h1{
+	font-size:25px;
+	color:#14a829;
+	padding-bottom:10px;
+}
+div.aboutFH div.FHintro p{
+	font-size:10px;
+	color:#999;
+	line-height:20px;
+}
+div.content div.product h1,div.content div.product h2,div.content div.pro_movie h1,div.content div.pro_movie h2{
+	text-align:center;
+	font-size:25px;
+}
+div.content div.product{
+	position:relative;
+	height:200px;
+}
+div.content #img{
+	position: absolute;
+	top:60px;
+	left:580px;
+}
+div.content a.btn1{
+	position:absolute;
+	top:100px;
+	left:400px;
+	width:155px;
+	height:55px;
+	background:url("../images/btn1.png") no-repeat;
+	trnsition:all .5s;
+}
+div.content a.btn1:hover{
+	cursor:pointer;
+	background:url("../images/btn_1.png") no-repeat;
+}
+div.content a.btn2{
+	position:absolute;
+	top:100px;
+	right:400px;
+	width:155px;
+	height:55px;
+	background:url("../images/btn2.png") no-repeat;
+}
+div.content a.btn2:hover{
+	cursor:pointer;
+	background:url("../images/btn_2.png") no-repeat;
+}
+div.content #pro_show{
+	position:relative;
+	width:700px;
+	height:200px;
+	overflow:hidden;
+	margin:10px auto;
+}
+div.content #pro_show ul{
+	position:absolute;
+	top:0;
+	left:0;
+}
+div.content #pro_show ul li{
+	float:left;
+	width:190px;
+	height:180px;
+}
+div.i{
+	position:relative;
+	height:10px;
+}
+div.content #d_left{
+	position: absolute;
+	top:-200px;
+	left:170px;
+	width:28px;
+	height:35px;
+	margin-top:55px;
+	background:url("../images/left_icon.png") no-repeat;
+	transition:all .5s; 
+}
+div.content #d_left a,div.content #d_right a{
+	font-size:20px;
+	opacity:0;
+}
+div.content #d_right{
+	position: absolute;
+	top:-200px;
+	right:170px;
+	width:28px;
+	height:35px;
+	margin-top:55px;
+	background:url("../images/right_icon.png") no-repeat; 
+	transition:all .5s; 
+}
+div.content #d_left:hover{
+	background:url("../images/left_icon1.png") no-repeat;
+	cursor:pointer;
+}
+div.content #d_right:hover{
+	background:url("../images/right_icon1.png") no-repeat; 
+	cursor:pointer;
+}
+div.content div.pro_movie h2{
+	font-size:15px;
+}
+div.content div.pro_movie div.movie{
+	position:relative;
+	left:250px;
+	top:30px;
+	width:700px;
+	height:350px;
+	background:url("../images/movie_img.png") no-repeat;
+}
