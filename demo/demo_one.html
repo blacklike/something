@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>测试项目1</title>
+		<link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
+		<style>
+			body {
+				background: #323232;
+			}
+			.box {
+				position: relative;
+				width: 600px;
+				height: 600px;
+				margin: auto;
+				top: 50px;
+			}
+			
+			h1 {
+				position: absolute;
+				width: 90%;
+				text-align: center;
+				font-size: 100px;
+				top: -70px;
+				left: 5%;
+				font-family: "Cabin Sketch", cursive;
+				font-weight: lighter;
+				color: lightgray;
+			}
+			
+			span {
+				position: absolute;
+				width: 100px;
+				height: 400px;
+				left: 40%;
+				top: -60px;
+				transform-origin: bottom center;
+			}
+			
+			span:nth-child(1) {
+				transform: rotate(-30deg);
+			}
+			
+			span:nth-child(2) {
+				transform: rotate(-20deg);
+			}
+			
+			span:nth-child(3) {
+				transform: rotate(-10deg);
+			}
+			
+			span:nth-child(5) {
+				transform: rotate(10deg);
+			}
+			
+			span:nth-child(6) {
+				transform: rotate(20deg);
+			}
+			
+			span:nth-child(7) {
+				transform: rotate(30deg);
+			}
+			
+			.red {
+				position: absolute;
+				width: 110%;
+				height: 62%;
+				background: #BE1E2D;
+				border-radius: 300px 300px 0px 0px;
+				top: 9%;
+				left: -5%;
+			}
+			
+			.orange {
+				position: absolute;
+				width: 102%;
+				height: 57%;
+				background: #F7941E;
+				border-radius: 300px 300px 0px 0px;
+				top: 14%;
+				left: -1%;
+			}
+			
+			.green {
+				position: absolute;
+				width: 95%;
+				height: 52%;
+				background: #8DC63F;
+				border-radius: 300px 300px 0px 0px;
+				top: 19%;
+				left: 3%;
+			}
+			
+			.light_green {
+				position: absolute;
+				width: 85%;
+				height: 48%;
+				background: #D7DF23;
+				border-radius: 300px 300px 0px 0px;
+				top: 23%;
+				left: 8.5%;
+			}
+			
+			.body_back {
+				position: absolute;
+				width: 70%;
+				height: 40%;
+				background: #F7941E;
+				border-radius: 300px 300px 0px 40px;
+				top: 30%;
+				left: 13%;
+				border: 3px solid black;
+			}
+			
+			.body {
+				position: absolute;
+				width: 70%;
+				height: 40%;
+				background: #F7941E;
+				border-radius: 300px 300px 0px 0px;
+				top: 30%;
+				left: 17%;
+				border: 3px solid black;
+			}
+			
+			.body:after {
+				position: absolute;
+				content: "";
+				width: 6%;
+				height: 7%;
+				bottom: 0px;
+				left: -5.5%;
+				background: #F7941E;
+				border: 3px solid transparent;
+				border-top-color: black;
+				border-radius: 0 0 0 300px / 0 0 0 300px;
+			}
+			
+			.left_eye {
+				position: absolute;
+				width: 8%;
+				height: 16%;
+				background: #000000;
+				border-radius: 50% 50% 50% 50% /60% 60% 40% 40%;
+				left: 36%;
+				top: 15%;
+			}
+			
+			.left_eye .glow {
+				position: absolute;
+				width: 50%;
+				height: 60%;
+				background: #FFFFFF;
+				border-radius: 50%;
+				top: 25%;
+				left: 35%;
+			}
+			
+			.right_eye {
+				position: absolute;
+				width: 8%;
+				height: 16%;
+				background: #000000;
+				border-radius: 50% 50% 50% 50% /60% 60% 40% 40%;
+				left: 59%;
+				top: 15%;
+			}
+			
+			.right_eye .glow {
+				position: absolute;
+				width: 50%;
+				height: 60%;
+				background: #FFFFFF;
+				border-radius: 50%;
+				top: 25%;
+				left: 35%;
+			}
+			
+			.left_ear,
+			.right_ear {
+				position: absolute;
+				width: 10%;
+				height: 20%;
+				background: #000000;
+				clip-path: polygon(25% 0, 17% 100%, 100% 100%);
+			}
+			
+			.left_ear:before,
+			.right_ear:before {
+				position: absolute;
+				content: "";
+				width: 102%;
+				height: 105%;
+				clip-path: polygon(25% 13%, 17% 100%, 88% 100%);
+				background: #F7941E;
+				z-index: -1;
+				top: 1px;
+				left: 3px;
+			}
+			
+			.left_ear {
+				top: -12%;
+				left: 30%;
+			}
+			
+			.right_ear {
+				top: -12%;
+				left: 55%;
+			}
+			
+			.nose {
+				position: absolute;
+				width: 0;
+				height: 0;
+				border: 12px solid transparent;
+				border-top: 20px solid #000000;
+				top: 28%;
+				left: 48.5%;
+			}
+			
+			.mouth {
+				position: absolute;
+				width: 30px;
+				background: #000;
+				border-radius: 0 0 300px 300px;
+				animation-name: smile;/*动画名称*/
+				animation-duration: 1s;/*动画播放时间*/
+				animation-iteration-count: 1;/*动画播放次数*/
+				animation-fill-mode: forwards;
+				top: 36%;
+				left: 47.75%;
+			}
+			@keyframes smile {
+				0% {
+					height: 1px;
+				}
+				100% {
+					height: 30px;
+				}
+			}
+			.left_arm,.right_arm{
+				position: absolute;
+				width:4%;
+				height: 20%;
+				background:#F7941E;
+				border-radius:0 0 300px 300px;
+				border:3px solid #000000;
+				border-top-color:transparent;
+				top:55%;
+			}
+			.left_arm{
+				left:19%;
+			}
+			.right_arm{
+				left:75%;
+			}
+			.left_leg,.right_leg{
+				position: absolute;
+				width:6%;
+				height: 20%;
+				background:#F7941E;
+				border-radius:0 0 300px 300px;
+				border:3px solid #000000;
+				border-top-color:transparent;
+				bottom:-20px;
+			}
+			.left_leg{
+				left:12%;
+			}
+			.right_leg{
+				left:80%;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="box">
+			<h1>
+				<span>T</span>
+				<span>A</span>
+				<span>C</span>
+				<span>O</span>
+				<span>C</span>
+				<span>A</span>
+				<span>T</span>
+			</h1>
+			<div class="red"></div>
+			<div class="orange"></div>
+			<div class="green"></div>
+			<div class="light_green"></div>
+			<div class="body_back"></div>
+			<div class="deco">
+				<div class="lettuce"></div>
+			</div>
+			<div class="body">
+				<div class="left_eye">
+					<div class="glow"></div>
+				</div>
+				<div class="right_eye">
+					<div class="glow"></div>
+				</div>
+				<div class="left_ear"></div>
+				<div class="right_ear"></div>
+				<div class="nose"></div>
+				<div class="mouth"></div>
+				<div class="left_arm"></div>
+				<div class="right_arm"></div>
+				<div class="left_leg"></div>
+				<div class="right_leg"></div>
+			</div>
+		</div>
+
+	</body>
+
+</html>
