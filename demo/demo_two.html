@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>测试项目2</title>
+		<style>
+			body {
+				margin: 0;
+				padding: 0;
+				background: #F6B678;
+			}
+			
+			.wrapper {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				border: 1px s;
+				background: radial-gradient(#F6DAA2 0%, #F6B678 50%);
+			}
+			
+			.canvas {
+				position: absolute;
+				width: 300px;
+				height: 300px;
+				/*border: 3px solid #000;*/
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				margin: auto;
+			}
+			
+			.box {
+				position: relative;
+				width: 90%;
+				height: 90%;
+				/*border: 1px solid #000;*/
+				top: 5%;
+				left: 5%;
+			}
+			
+			.top {
+				content: "";
+				position: absolute;
+				width: 96%;
+				height: 0;
+				content: "";
+				/*border: 1px solid #000;*/
+				border-left: 5px solid transparent;
+				border-right: 5px solid transparent;
+				border-bottom: 20px solid #fff;
+				top: 0;
+				left: 0;
+			}
+			
+			.top:before {
+				content: "";
+				position: absolute;
+				width: 210px;
+				height: 0;
+				/*border: 1px solid #000;*/
+				top: 20px;
+				left: -5px;
+				border-top: 80px solid #c69e7a;
+				border-left: 30px solid transparent;
+				border-right: 30px solid transparent;
+			}
+			
+			.top:after {
+				content: "";
+				position: absolute;
+				width: 200px;
+				height: 0;
+				top: 20px;
+				left: 5px;
+				border-top: 80px solid #e4b694;
+				border-left: 25px solid transparent;
+				border-right: 25px solid transparent;
+				/*border: 1px solid #000;*/
+			}
+			
+			.circle {
+				position: absolute;
+				width: 30px;
+				height: 25px;
+				/*border:1px solid #000;*/
+				top: 5px;
+				left: 50%;
+				background-color: #fff;
+				border-radius: 50%;
+				transform: translateX(-50%);
+			}
+			
+			.bottom {
+				content: "";
+				position: absolute;
+				width: 230px;
+				height: 0;
+				bottom: 0;
+				left: 15px;
+				/*border: 1px solid #000;*/
+				border-top: 20px solid #fff;
+				border-left: 5px solid transparent;
+				border-right: 5px solid transparent;
+			}
+			
+			.bottom:before {
+				content: "";
+				position: absolute;
+				width: 200px;
+				height: 0;
+				bottom: 20px;
+				left: -5px;
+				border-bottom: 150px solid #c49d7b;
+				border-left: 20px solid transparent;
+				border-right: 20px solid transparent;
+			}
+			
+			.bottom:after {
+				content: "";
+				position: absolute;
+				width: 190px;
+				height: 0;
+				bottom: 20px;
+				left: 5px;
+				border-bottom: 150px solid #e4b694;
+				border-left: 15px solid transparent;
+				border-right: 15px solid transparent;
+			}
+			
+			.back {
+				position: absolute;
+				width: 194px;
+				height: 0;
+				top: 100px;
+				left: 35px;
+				border-top: 15px solid #a68069;
+				border-left: 3px solid transparent;
+				border-right: 3px solid transparent;
+			}
+			
+			.pizza {
+				position: absolute;
+				width: 175px;
+				height: 175px;
+				border: 10px solid #f5a73b;
+				bottom: -1px;
+				left: 48px;
+				background: radial-gradient(#F5E8B3 0%, #F5CF6C 50%);
+				border-radius: 50%;
+				box-sizing: border-box;
+				border-top-width: 8px;
+				border-bottom-width: 15px;
+				transform: rotateX(40deg);
+			}
+			
+			.pizza:before {
+				content: '';
+				position: absolute;
+				width: 98%;
+				height: 97%;
+				border-radius: 50%;
+				border: 2px solid #f28c24;
+				border-bottom-width: 5px;
+			}
+			
+			.meat {
+				position: absolute;
+				width: 20px;
+				height: 18px;
+				/*border: 1px solid #000;*/
+				background:#c02626;
+				border-radius: 50%;
+			}
+			.meat:before{
+				content: "";
+				position: absolute;
+				width:3px;
+				height: 3px;
+				border:5px solid #333;
+				border-top-width: 4px;
+				border-radius: 50%;
+			}
+			.meat:after{
+				content: "";
+				position: absolute;
+				width:15px;
+				height:13px;
+				border: 5px solid transparent;
+				border-top-color:#61b364 ;
+				border-radius: 50%;
+			}
+			.meat:nth-child(1){
+				top:20px;
+				left: 40px;
+				height: 16px;
+			}
+			.meat:nth-child(1):before{
+				top:-10px;
+				left: 20px;
+			}
+			.meat:nth-child(1):after{
+				top:10px;
+				left: 20px;
+				transform: rotate(10deg);
+			}
+			.meat:nth-child(2){
+				top:20px;
+				right: 40px;
+				height: 16px;
+			}
+			.meat:nth-child(2):before{
+				top:5px;
+				left: 20px;
+			}
+			.meat:nth-child(2):after{
+				top:7px;
+				left:15px;
+				transform: rotate(120deg);
+			}
+			.meat:nth-child(3){
+				top:60px;
+				left: 20px;
+				height: 16px;
+			}
+			.meat:nth-child(3):before{
+				top:10px;
+				left: -5px;
+			}
+			.meat:nth-child(3):after{
+				top:10px;
+				left: 20px;
+				transform: rotate(-120deg);
+			}
+			.meat:nth-child(4){
+				top:60px;
+				left: 70px;
+				height: 16px;
+			}
+			.meat:nth-child(4):before{
+				top:-7px;
+				left: -5px;
+			}
+			.meat:nth-child(4):after{
+				top:7px;
+				left: 7px;
+				transform: rotate(25deg);
+			}
+			.meat:nth-child(5){
+				top:60px;
+				right: 20px;
+				height: 16px;
+			}
+			.meat:nth-child(5):before{
+				top:30px;
+				left: -10px;
+			}
+			.meat:nth-child(5):after{
+				top:20px;
+				left: 5px;
+				transform: rotate(-20deg);
+			}
+			.meat:nth-child(6){
+				bottom:20px;
+				left: 40px;
+				height: 16px;
+			}
+			.meat:nth-child(6):before{
+				top:-10px;
+				left: 20px;
+			}
+			.meat:nth-child(6):after{
+				top:3px;
+				left: 0px;
+				transform: rotate(120deg);
+			}
+			.meat:nth-child(7){
+				bottom:20px;
+				right: 40px;
+				height: 16px;
+			}
+			.meat:nth-child(7):before{
+				top:-10px;
+				left: 20px;
+			}
+			.meat:nth-child(7):after{
+				top:-10px;
+				left: -15px;
+				transform: rotate(-120deg);
+			}
+			.overly{
+				content: "";
+				position: absolute;
+				width: 30px;
+				height: 25px;
+				/*border:1px solid #000;*/
+				bottom: 8px;
+				left: 50%;
+				background: linear-gradient(transparent 50%, #f5a73b 50%);
+				border-radius: 50%;
+				transform: translateX(-50%);
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<div class="canvas">
+				<div class="box">
+					<div class="top"></div>
+					<div class="circle"></div>
+					<div class="bottom"></div>
+					<div class="back"></div>
+					<div class="pizza">
+						<div class="meat"></div>
+						<div class="meat"></div>
+						<div class="meat"></div>
+						<div class="meat"></div>
+						<div class="meat"></div>
+						<div class="meat"></div>
+						<div class="meat"></div>
+					</div>
+					<div class="overly"></div>
+				</div>
+				
+			</div>
+		</div>
+	</body>
+
+</html>
