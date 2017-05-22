@@ -168,7 +168,7 @@ body {
 	width:390px;
 }
 .content_right_side .myself_info li:nth-child(1){
-	height:330px;
+	height:350px;
 	margin-top:20px;
 	border-bottom:1px solid #DDDDDD ;
 }
@@ -186,9 +186,7 @@ body {
 .content_right_side .myself_info li .intr{
 	font: "微软雅黑";
 	font-size:16px;
-	margin-top: 16px;
-	line-height:2.5em;
-	text-indent: 2em;
+	line-height:2.2em;
 }
 .content_right_side .myself_info li div table{
 	width:390;

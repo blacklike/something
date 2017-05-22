@@ -217,11 +217,13 @@ body{
 	height:200px;
 	/*border-right:1px solid #000;*/
 }
-#three .th_content .intro dl dt,#three .th_content .intro .ri h2{
-	margin:15px 0;
+#three .th_content .intro dl dt,#three .th_content .intro .ri h2,#three .th_content .intro dl dt,#three .th_content .intro #right h2{
+	margin-bottom:15px;
+	margin-top:0 ;
 	font:25px "逐浪雅宋体",Arial;
 	color:#888;
 }
+
 #three .th_content .intro dl dd{
 	margin-bottom:13px;
 	font:20px "逐浪雅宋体",Arial;
@@ -230,10 +232,10 @@ body{
 }
 #three .th_content .intro .ri{
 	position:absolute;
-	right:0;
-	width:900px;
+	right:0px;
+	width:1000px;
 	height:330px;
-	/*border:1px solid #000;*/
+	border:1px solid #000;
 }
 #three .th_content .intro .ri #left{
 	float:left;
@@ -241,23 +243,34 @@ body{
 	height:270px;
 	/*border:1px solid #000;*/
 }
-#three .th_content .intro .ri #right{
-	float:right;
-	width:600px;
+
+#three .th_content .intro .ri #left{
+	width: 400px;
 	height:270px;
-	border:1px solid #000;
+	/*border:3px solid #000;*/
+/*	text-align:center;*/
+	line-height:20px;
+	
 }
-#three .th_content .intro .ri #left li{
-	width: 100px;
-	height:50px;
-	border:3px solid #000;
-	text-align:center;
-	line-height:50px;
-	margin:5px 20px 12px 100px;
-}
-#three .th_content .intro .ri #left li p{
-	padding-top:12px;
-	font-weight:bold;
+#three .th_content .intro .ri #left p{
+	font-size: 13px;
+	text-indent: 2em;
+	line-height:2.2em;
 	font:20px "逐浪雅宋体",Arial;
-	color:#888;
+	color:#999;
+	
+}
+#three .th_content .intro #right{
+	float:right;
+	width:450px;
+	height:330px;
+	border: 1px solid #000000;
+}
+#three .th_content .intro #right .table{
+	width:450px;
+	height:300px;
+}
+#three .th_content .intro #right .table tr th,#three .th_content .intro #right .table tr td{
+	font-size: 20px;
+	text-align: right;
 }
