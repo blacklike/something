@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>万年日历</title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		#box{
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: auto;
+			width:450px;
+			height: 380px;
+			border:2px solid #008B8B;
+		}
+		#top{
+			width: 100%;
+			height: 50px;
+			font-size:15px;
+			border-bottom:1px solid #008B8B ;
+		}
+		#year{
+			margin:15px 10px;
+		}
+		#year,#month{
+			text-align:center;
+			margin-right:15px ;
+		}
+		#content{
+			width: 420px;
+			height: 300px;
+			margin:0px auto 0px;
+		}
+		#content ul.week{
+			width: 100%;
+			height:45px;
+		}
+		#content ul.week li{
+			float: left;
+			list-style: none;
+			width: 60px;
+			height: 45px;
+			line-height: 45px;
+			text-align:center;
+		}
+		#content ul.day li{
+			float: left;
+			width: 60px;
+			height: 45px;
+			list-style: none;
+			line-height: 45px;
+			text-align:center;
+			border-top:1px solid #ddd;
+		}
+	</style>
+</head>
+<body>
+	<div id="box">
+		<div id="top">
+			<select id="year">
+				<option value="">请选择年份</option>
+			</select>年
+			<select id="month">
+				<option value="">请选择月份</option>
+			</select>月
+			<button id="inquriy" onclick="a()">查询</button>
+		</div>
+		<div id="content">
+			<ul class="week">
+				<li>一</li>
+				<li>二</li>
+				<li>三</li>
+				<li>四</li>
+				<li>五</li>
+				<li>六</li>
+				<li>日</li>
+			</ul>
+			<ul class="day">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	/*
+	 * 1.分析项目当中的需求，用到什么就给什么，执行什么就给什么
+	 * 2.JS自动生成N个option元素  重复做很多事情   for循环
+	 * 3.要把自动生成的元素放在某一父级节点里面  获取到这个父级
+	 * 4.点击查询按钮   出现相对应的日期
+	 * 5.获取当月的日历    每个月的第一天是星期几
+	 */
+	var listYear=document.querySelector("#year");
+	var listMonth=document.querySelector("#month");
+	var dayList=document.getElementsByClassName("day")[0].getElementsByTagName("li");
+	function forEach(callback,length,firstNum){//封装一个方法用于多次执行，对重复调用的东西进行封装
+		var i=firstNum?firstNum:0;//三木运算
+		/*
+		 * 逻辑运算
+		 * var i=firstNum||0;
+		 */
+		for(;i<length;i++){
+			callback(i);//回调函数
+		}
+	}
+	var dayArr=[31,28,31,30,31,30,31,31,30,31,30,31];
+	function is_leap(year){
+		var res=0;//0:平年,1:闰年
+		return year%100==0?res=(year%400==0?1:0):res=(year%4==0?1:0);
+	}
+	
+	forEach(function(i){
+		var year = document.createElement("option");
+		year.innerHTML=i;
+		year.value=i;
+		listYear.appendChild(year);
+	},2051,1900);
+	forEach(function(i){
+		var month = document.createElement("option");
+		month.innerHTML=i;
+		month.value=i;
+		listMonth.appendChild(month);
+	},13,1);
+	
+	function a(){
+		forEach(function(i){
+				dayList[i].innerHTML="";
+			},dayList.length);
+		if(listYear.value==""||listMonth.value==""){
+			//当年份或者月份可能有一个没有填入的时候
+			alert("你没有填完啊，大兄弟！");
+			return;
+		}else{
+			var month=listMonth.value-1;//月份的范围是  0-11
+			var year=listYear.value;//按照公历来就可以了
+			var firstDay=new Date(year,month,1);//获取当月的第一天时间对象
+//			console.log(firstDay);
+			dayArr[1]=is_leap(year)?29:28;
+			var time=firstDay.getDay();
+			forEach(function(i){
+				dayList[time+i-1].innerHTML=i+1;
+			},dayArr[month]);
+		};
+	}
+</script>
+</html>
