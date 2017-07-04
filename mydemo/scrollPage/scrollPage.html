@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>页面滑动</title>
+		<style type="text/css">
+			* {
+				padding: 0;
+				margin: 0;
+			}
+			
+			html,
+			body {
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+			}
+			
+			.section-wrap {
+				width: 100%;
+				height: 100%;
+				overflow: visible;
+				transition: all 2s cubic-bezier(0.86, 0, 0.8, 1);
+				-webkit-transition: all 2s cubic-bezier(0.86, 0, 0.8, 1);
+			}
+			
+			.section-wrap .section {
+				position: relative;
+				width: 100%;
+				height: 100%;
+				background-position: center center;
+				background-repeat: no-repeat;
+			}
+			
+			.section-wrap .section-1 {
+				background: #337ab7;
+			}
+			
+			.section-wrap .section-2 {
+				background: #5cb85c;
+			}
+			
+			.section-wrap .section-3 {
+				background: #5bc0de;
+			}
+			
+			.section-wrap .section-4 {
+				background: #f0ad4e;
+			}
+			
+			.section-wrap .section-5 {
+				background: #d9534f;
+			}
+			.put-section-0 {
+				transform: translateY(0);
+				-webkit-transform: translateY(0);
+			}
+			
+			.put-section-1 {
+				transform: translateY(-100%);
+				-webkit-transform: translateY(-100%);
+			}
+			
+			.put-section-2 {
+				transform: translateY(-200%);
+				-webkit-transform: translateY(-200%);
+			}
+			
+			.put-section-3 {
+				transform: translateY(-300%);
+				-webkit-transform: translateY(-300%);
+			}
+			
+			.put-section-4 {
+				transform: translateY(-400%);
+				-webkit-transform: translateY(-400%);
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="section-wrap">
+			<div class="section section-1">
+
+			</div>
+			<div class="section section-2">
+
+			</div>
+			<div class="section section-3">
+
+			</div>
+			<div class="section section-4">
+
+			</div>
+			<div class="section section-5">
+
+			</div>
+		</div>
+
+		<script src="js/jquery-3.2.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/scrollJS.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function() {
+				var i = 0;
+				var $wrap = $('.section-wrap');
+				
+				function up(){
+					i++;
+					if(i==5)i=0;
+				}
+				function down(){
+					i--;
+					if(i<0)i=5-1;
+				}
+				
+				function run() {
+					$wrap.attr("class", "section-wrap").addClass(function() {
+						return "put-section-" + i;
+					});
+				}
+				
+				$wrap.one('mousewheel',mouse_);
+				function mouse_(event){
+					if(event.deltaY<0){
+						up();
+					}else{
+						down();
+					}
+					run();
+					setTimeout(function(){
+						$wrap.one('mousewheel', mouse_);
+					},1000);
+				}
+				
+				$(document).one('keydown', k);
+
+				function k(event) {
+
+					var e = event || window.event;
+
+					var key = e.keyCode || e.which || e.charCode;
+
+					switch(key) {
+
+						case 38:
+							down();
+							run();
+
+							break;
+
+						case 40:
+							up();
+							run();
+
+							break;
+
+					};
+
+					setTimeout(function() {
+						$(document).one('keydown', k)
+					}, 1000);
+
+				}
+			});
+		</script>
+	</body>
+
+</html>
