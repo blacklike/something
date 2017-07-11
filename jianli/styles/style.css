@@ -142,36 +142,42 @@ body{
 	height:14px;
 	background:url("../images/wjt.png") no-repeat;
 }
-.h_main1 .con li:nth-of-type(1){
+.h_main1 .con li{
 	position:absolute;
 	top:20px;
-	left:20px;
 	width:300px;
 	height:260px;
 	border:10px solid #ddd;
+}
+.h_main1 .con li:nth-of-type(1){
+	left:20px;
 }
 .h_main1 .con li:nth-of-type(2){
-	position:absolute;
-	top:20px;
 	left:370px;
+}
+.h_main1 .con li:nth-of-type(3){
+	left:725px;
+}
+.h_main1 .con li:nth-of-type(4){
+	left:1084px;
+}
+.h_main1 .con .show1 img,.h_main1 .con .show2 img,.h_main1 .con .show3 img,.h_main1 .con .show4 img{
 	width:300px;
 	height:260px;
-	border:10px solid #ddd;
-}
-.h_main1 .con .show1 img{
-	width:300px;
-	height:auto;
 }
 .h_main1 .con a{
 	position:absolute;
-	left:100px;
+	left:20%;
 	bottom:-50px;
 	color:#777;
 	font:20px "微软雅黑",Arial;
 }
-.h_main1 .con .show2 img{
-	width:300px;
-	height:auto;
+#four .con a{
+	left:30%;
+}
+.h_main1 .con a:hover{
+	color:#A1836E;
+	
 }
 .h_main1 .two_ic1{
 	position:absolute;
@@ -187,7 +193,6 @@ body{
 	top:20px;
 	width:1860px;
 	height:330px;
-/*	border:1px solid #000;*/
 }
 #three .th_content #book{
 	position: absolute;
@@ -228,35 +233,25 @@ body{
 	margin-bottom:13px;
 	font:20px "逐浪雅宋体",Arial;
 	color:#888;
-/*	border-right:1px solid #000;*/
 }
 #three .th_content .intro .ri{
 	position:absolute;
 	right:0px;
 	width:1000px;
 	height:330px;
-	border:1px solid #000;
 }
 #three .th_content .intro .ri #left{
 	float:left;
-	width:270px;
+	width:50%;
 	height:270px;
-	/*border:1px solid #000;*/
-}
-
-#three .th_content .intro .ri #left{
-	width: 400px;
-	height:270px;
+	left:10px;
 	/*border:3px solid #000;*/
-/*	text-align:center;*/
-	line-height:20px;
-	
 }
 #three .th_content .intro .ri #left p{
 	font-size: 13px;
 	text-indent: 2em;
 	line-height:2.2em;
-	font:20px "逐浪雅宋体",Arial;
+	font-size: 20px;
 	color:#999;
 	
 }
@@ -264,7 +259,6 @@ body{
 	float:right;
 	width:450px;
 	height:330px;
-	border: 1px solid #000000;
 }
 #three .th_content .intro #right .table{
 	width:450px;
