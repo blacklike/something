@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+html{height: 100%;}
+body{height: 100%;
+	background:#023b3b url('../images/bg.jpg') no-repeat center;
+	overflow: hidden;overflow: hidden;
+    perspective:800px;}
+#main{width:0;height:0;position:absolute;
+	top:50%;left:50%;transform-style:preserve-3d;
+	
+    transform: translateZ(-2000px) rotateX(0deg) rotateY(0deg);}
+li{list-style:none;}
+#main li{position:absolute;top:-80px;left:-60px;width:120px;height:160px;background:rgba(0,127,127,0.5);border: 1px solid rgba(127,225,225,0.25);box-shadow:0 0 12px rgba(0,255,255,0.5);cursor:pointer;
+transform: translate(0px,0px);/*位移变换*/}
+#main li:hover{box-shadow:0 0 12px rgba(0,255,255,0.75);border: 1px solid rgba(127,225,225,0.75);}
+/*transform-style:preserve-3d; 变换风格：3d
+prespective:800px; 景深//相当于舞台,如同电视,能实现近大远小的效果
+*/
