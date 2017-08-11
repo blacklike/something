@@ -7,7 +7,7 @@ body{height: 100%;
     perspective:800px;}
 #main{width:0;height:0;position:absolute;
 	top:50%;left:50%;transform-style:preserve-3d;
-	
+	transition:1s;
     transform: translateZ(-2000px) rotateX(0deg) rotateY(0deg);}
 li{list-style:none;}
 #main li{position:absolute;top:-80px;left:-60px;width:120px;height:160px;background:rgba(0,127,127,0.5);border: 1px solid rgba(127,225,225,0.25);box-shadow:0 0 12px rgba(0,255,255,0.5);cursor:pointer;
