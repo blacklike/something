@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <title>3D立体图片</title>
+     <style type="text/css" id="css">
+          #box{
+               position:relative;width:800px;height:360px;margin:50px auto;-webkit-perspective: 800px;perspective: 800px;
+          }
+          /*图片样式设置*/
+          #pic,#btn{padding:0;}
+          #pic li{
+               position:relative;float:left;height:360px;list-style: none;-webkit-transform-style: preserve-3d;transform-style: preserve-3d; -webkit-transform-origin:center center -180px; transform-origin:center center -180px;
+          }
+          #pic li span{
+               position:absolute;height:360px;
+          }
+          #pic li span:nth-child(1){background: url("images/1(1).jpg");}
+          #pic li span:nth-child(2){background: url("images/2(1).jpg");
+               -webkit-transform: translateZ(-360px) rotateX(180deg);
+                       transform: translateZ(-360px) rotateX(180deg);
+          }
+          #pic li span:nth-child(3){background: url("images/3(1).jpg");top:-360px;
+               -webkit-transform-origin: bottom;
+                       transform-origin: bottom;
+               -webkit-transform:rotateX(90deg);
+                       transform:rotateX(90deg);}
+          #pic li span:nth-child(4){background: url("images/4(1).jpg");top:360px;
+               -webkit-transform-origin: top;
+                       transform-origin: top;
+               -webkit-transform:rotateX(-90deg);
+                       transform:rotateX(-90deg);}
+          /*按钮样式设置*/
+          #btn{position: absolute;right: 0;bottom: 0;z-index:10;}
+          #btn li{float:left;background:#eee;border-radius:50%;text-align:center;line-height:20px;width:20px;height: 20px;list-style: none;margin-left:10px;cursor: pointer;}
+          #btn li.active{
+                background:purple;
+                color:#fff;
+            }
+
+     </style>
+
+</head>
+<body>
+     <div id="box">
+     <!-- 图片 -->
+          <ul id="pic">
+               
+          </ul>
+          <!-- 按钮 -->
+          <ul id="btn">
+               <li>1</li>
+               <li>2</li>
+               <li>3</li>
+               <li>4</li>
+          </ul>
+     </div>
+     <script type="text/javascript">
+          var oPic = document.getElementById("pic");
+          var oCss = document.getElementById("css");
+          var oBtn = document.getElementById("btn").children;
+          /*需要几个li*/ 
+          var lLen = 20;
+          /*每个li的宽度*/ 
+          var lWid = 800/lLen;
+          var sHtml = "";
+          var sCss = "";
+          var z = 0;
+          var iNow = 0;
+          var oLi = oPic.children;
+
+          addLi(lLen);
+          /*添加li*/ 
+          function addLi(len) {
+              
+               for(var i=0;i<len;i++){
+                     i>lLen/2?z--:z++;
+                    sHtml+="<li style='z-index:"+z+"'><span></span><span></span><span></span><span></span></li>";
+                    sCss+="#pic li{width:"+lWid+"px;}#pic li span{width:"+lWid+"px;} #pic li:nth-child("+(i+1)+") span{background-position:-"+(lWid*i)+"px 0}";
+               }
+               oPic.innerHTML+=sHtml;
+               oCss.innerHTML+=sCss;
+
+               /*鼠标点击按钮产生的3D切换效果*/ 
+               for(var j=0;j<oBtn.length;j++){
+                    oBtn[j].index=j;
+                    oBtn[j].onclick=function(){
+                         oBtn[iNow].className="";
+                         for(var k=0;k<oLi.length;k++){
+                              oLi[k].style.transition="0.8s "+k*50+"ms";
+                              oLi[k].style.transform="rotateX(-"+(this.index)*90+"deg)";
+                         }
+                        iNow = this.index;
+                        oBtn[iNow].className = "active";
+
+                    }
+               }
+               
+          }
+     </script>
+</body>
+</html>
