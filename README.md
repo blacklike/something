@@ -5,4 +5,3 @@
 ***
 > [个人简历](https://blacklike.github.io/resume/resume/index.html)
 ***
-> [个人hexo](https://blacklike.github.io/myhexo.github.io/)
