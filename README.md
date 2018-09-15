@@ -5,6 +5,6 @@
 ***
 > [个人简历](https://blacklike.github.io/resume/resume/index.html)
 ***
-> [个人博客](https://blacklike.github.io/myblog)
+> [个人博客](https://blacklike.github.io)
 ***
 > 个人小作品集合地
