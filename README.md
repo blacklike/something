@@ -7,5 +7,6 @@
 > [个人博客](https://blacklike.github.io)
 ***
 > 个人小作品集合地
-> - [js案例一](https://blacklike.github.io/something/js/js%E6%A1%88%E4%BE%8B%E4%B8%80/jsTest1.html)
-> - [js案例二](https://blacklike.github.io/something/js/js%E6%A1%88%E4%BE%8B%E4%BA%8C/3D.html)
+> - [案例一](https://blacklike.github.io/something/js/js%E6%A1%88%E4%BE%8B%E4%B8%80/jsTest1.html)
+> - [案例二](https://blacklike.github.io/something/js/js%E6%A1%88%E4%BE%8B%E4%BA%8C/3D.html)
+> - [案例三](https://blacklike.github.io/something/mydemo/calendar.html)
